@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Permanent+Marker&display=swap');
+body {
+    background-image: url("./bilder/kristaps-grundsteins-_Vm8XWJ9UaQ-unsplash.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+h1 {
+    font-size: 50px;
+    font-family: 'Permanent Marker', cursive;
+    
+}
+h2 {
+font-size: 60px;
+font-family: 'Permanent Marker', cursive;
+color: rgb(71, 67, 61)
+}
+p {
+font-size: 20px;
+font-family: 'Indie Flower', cursive;
+color: aliceblue
+}
+a {
+color: aqua
+}
