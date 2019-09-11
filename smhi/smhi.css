@@ -1,0 +1,23 @@
+body{
+
+}
+table{
+width: 700px;
+border-collapse: collapse;
+}
+caption{
+font-size: 50px;
+}
+tr{
+    border: 1px solid #999;
+}
+th{
+
+
+}
+td{
+
+}
+img{
+  width: 50px;
+}

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Modak|Shadows+Into+Light&display=swap');
+body{
+
+}
+table{
+width:1300px;
+background-color: rgb(207, 137, 109);
+border-spacing: 10px;
+}
+caption{
+    font-family: 'Modak', cursive;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    background-image: url("./bilder/bakgrund-for-tabell.jpg");
+    background-size: auto;
+
+}
+tr{
+
+}
+th{
+    font-family: 'Special Elite', cursive;
+    font-size: 20px;
+    background: rgb(179, 86, 0);
+    padding: 10px;
+    background: linear-gradient(0deg, rgba(166,78,6,1) 0%, rgba(249,140,104,1) 100%);
+   
+}
+td{
+    font-family: 'Special Elite', cursive;
+    font-size: 20px;
+    background: #fff;
+    padding: 10px;
+    border:5px solid rgb(252, 200, 175);
+    border-radius: 10px;
+}
+img{
+    width: 100%;
+    border-radius: 10px;
+}
