@@ -1,0 +1,16 @@
+body{
+background: url("./bilder/america-moon.jpg");
+background-size: cover;
+background-position: 0 -100px;
+}
+h1{
+color: white;
+font: 40px sans-serif;
+font-weight: bold;
+margin: 615px 0 0 300px;
+}
+h2{
+color: white;
+margin-left:300px;
+font: 16px sans-serif;
+}

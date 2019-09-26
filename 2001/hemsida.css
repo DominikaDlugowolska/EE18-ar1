@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Megrim&display=swap');
+body{
+background: rgb(0, 0, 0) url("./bilder/jorden.jpg") no-repeat fixed center bottom;
+background-size: 400px;
+}
+h1{
+color: aliceblue;
+font: 80px 'Megrim', cursive;
+text-align: center;
+margin: 50px auto 0 auto;
+width: 600px;
+background-color: rgb(93, 63, 121);
+border: 1px solid white;
+padding: 30px;
+}
+h2{
+color: aliceblue;
+font: 30px'Megrim', cursive;
+text-align: center;
+background-color: rgb(163, 138, 187);
+margin: 10px auto 0 auto;
+width: 600px;
+border: 1px solid white;
+padding: 10px;
+}

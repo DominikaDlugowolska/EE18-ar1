@@ -1,0 +1,26 @@
+body {
+    background: url("./bilder/beach.jpg");
+    background-size: cover;
+}
+h1 {
+    font: 70px sans-serif;
+    color: white;
+    margin: 150px 0 0 150px;
+    font-weight: bold;
+}
+h2 {
+    color: white;
+    font: 40px sans-serif;
+    margin: 00 0 0 150px;
+}
+p {
+    color: white;
+    font: 40px sans-serif;
+    background-color: pink;
+    width: 170px;
+    margin: 300px 0 0 950px;
+    padding: 30px;
+    border-radius: 10px;
+    border: 5px solid white;
+
+}
