@@ -16,19 +16,22 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 background: url("./bilder/pattern1.jpg");
 }
 .sida2 {
-background: url("./bilder/pattern2.jpg");
+background: url("./bilder/pattern4.jpg");
 }
 .sida3 {
 background: url("./bilder/pattern2.jpg");
 }
 .sida4 {
-background: url("./bilder/pattern2.jpg");
+background: url("./bilder/pattern3.jpg");
+background-size: auto;
 }
 .sida5 {
-background: url("./bilder/pattern2.jpg");
+background: url("./bilder/pattern5.jpg");
+background-size: auto;
 }
 .sida6 {
-background: url("./bilder/pattern2.jpg");
+background: url("./bilder/pattern6.jpg");
+background-size: contain;
 }
 
 /* Utseende på boxen */
