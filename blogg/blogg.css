@@ -18,14 +18,15 @@ background: rgb(38, 37, 63);
     font-family: 'Asap', sans-serif;
     width: 700px;
     background: rgb(51, 51, 75);
-    padding: 50px auto;
-    margin: 20px 0 20px 400px;
+    padding: 50px;
+    margin: 20px auto;
     border-radius: 30px;
     box-shadow: 0 0 50px rgba(119, 132, 167, 0.466);
 }
 h1{
     font-family: 'Abril Fatface', cursive;
-    padding: 20px;
+    margin-left: 150px;
+    font-size: 50px;
 }
 
 /* Utseendet på inläggen */
@@ -34,22 +35,26 @@ h1{
     padding: 50px;
     margin: 15px 0 15px 0;
 }
-img{
+.bild{
 width: 100%;
+padding: 20px;
+background: white;
 }
 h2{
     font-family: 'Abril Fatface', cursive;
+    margin-top: 20px;
 }
 .datum{
 color: rgb(97, 39, 0);
 }
 p{
 font-size: 20px;
+margin: 20px 0;
 }
 /* Utseendet på sidfot */
 .sidfot{
 
 }
 .namn{
-
+font-style: italic;
 }

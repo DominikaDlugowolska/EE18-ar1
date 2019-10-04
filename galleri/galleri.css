@@ -1,0 +1,47 @@
+/* Enkel CSS-reset */
+@import url('https://fonts.googleapis.com/css?family=Cute+Font|Orbitron&display=swap');
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+/* Utseendet på sidan */
+body{
+background: url("./bilder/nigh-sky.png");
+background-size: cover;
+background-attachment: fixed;
+}
+.kontainer{
+background: rgba(255, 255, 255, 0.5);
+margin: auto;
+width: 800px;
+padding: 50px;
+font-family: 'Cute Font', cursive;
+}
+h1{
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+}
+.intro{
+
+}
+
+/* Utseendet på rutor */
+.ruta{
+background: #000;
+color: aliceblue;
+}
+img{
+width:300px;
+padding: 10px;
+border: 5px dashed black;
+background: rgb(173, 173, 173);
+}
+.bildtext{
+
+}
