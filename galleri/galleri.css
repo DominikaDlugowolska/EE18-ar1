@@ -10,6 +10,14 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     margin: 0;
     padding: 0;
 }
+/* CSS clearfix mot box-kollaps (när man använder float) */
+.clearfix:after { 
+    content: "."; 
+    visibility: hidden; 
+    display: block; 
+    height: 0; 
+    clear: both;
+ }
 /* Utseendet på sidan */
 body{
 background: url("./bilder/nigh-sky.png");
@@ -28,13 +36,18 @@ h1{
     text-align: center;
 }
 .intro{
-
+font-size: 30px;
+text-align: center;
 }
 
 /* Utseendet på rutor */
 .ruta{
 background: #000;
 color: aliceblue;
+font-size: 20px;
+border-radius: 20px;
+padding: 30px;
+margin: 20px auto;
 }
 img{
 width:300px;
@@ -42,6 +55,24 @@ padding: 10px;
 border: 5px dashed black;
 background: rgb(173, 173, 173);
 }
-.bildtext{
 
+.vänster {
+float: left;
+margin-right: 20px;
+}
+.höger{
+float: right;
+margin-left: 20px;
+}
+.textHöger{
+text-align: right;
+}
+hr{
+    clear: both;
+    visibility: hidden;
+}
+.kalla{
+margin: 20px 0;
+font-size: 25px;
+font-style: italic;
 }
