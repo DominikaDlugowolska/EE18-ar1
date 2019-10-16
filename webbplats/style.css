@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Mansalva|Quicksand&display=swap');
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+/* Sidans färgpalett 
+$color1: rgba(138, 160, 194, 1);
+$color2: rgba(197, 126, 134, 1);
+$color3: rgba(255, 126, 103, 1);
+$color4: rgba(74, 75, 69, 1);
+$color5: rgba(255, 200, 173, 1); */
+
+/* Sidans utseende */
+body{
+background: rgba(74, 75, 69, 1);
+}
+.kontainer{
+    font-family: 'Quicksand', sans-serif;
+    width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    background: rgba(255, 126, 103, 1);
+}
+.kontainer h1{
+    font: 60px 'Quicksand', sans-serif;
+    text-align: center;
+    color: rgba(74, 75, 69, 1);
+    
+}
+.kontainer h2{
+    font-family: 'Mansalva', cursive;
+    text-align: center;
+}
+/* Menyns utseende */
+.kontainer .meny{
+text-align: center;
+margin: 10px 0 30px 0;
+}
+.kontainer .meny li{
+list-style-type: none;
+display: inline;
+}
+.kontainer .meny a{
+background: rgb(221, 100, 78);
+padding: 7px;
+margin: 0 3px;
+color: rgba(74, 75, 69, 1);
+text-decoration: none;
+border-radius: 5px;
+box-shadow: 3px 3px 0 black;
+width: 130px;
+display: inline-block;
+}
+.kontainer .meny a:hover{
+background: rgba(138, 160, 194, 1);
+}
+.kontainer .meny .aktiv{
+    background: rgba(255, 200, 173, 1);
+}
+/* Innehållets utseende */
+.kontainer h2{
+text-align: center;
+font-size: 35px;
+color: rgb(55, 56, 50);
+}
+.kontainer figure{
+background: white;
+padding: 20px;
+width: 600px;
+border-radius: 5px;
+margin: 20px auto;
+}
+.kontainer figure img {
+width: 100%;
+}
+.kontainer p{
+color: rgb(55, 56, 50);
+font-size: 17px;
+margin: 10px 0;
+}
+.kontainer .sidfot{
+font-style: italic;
+}
+.kontainer .sidfot a{
+color: rgba(138, 160, 194, 1);
+text-decoration: none;
+font-weight: bold;
+}

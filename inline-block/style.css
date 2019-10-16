@@ -1,0 +1,14 @@
+h1{
+
+}
+h2{
+
+}
+a{
+display: block;
+}
+img{
+    display: block;
+}
+/* a och img är inline, de lägger sig efter varandra.
+men man kan ändra på det med display */
