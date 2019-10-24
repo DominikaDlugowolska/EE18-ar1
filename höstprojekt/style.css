@@ -16,41 +16,51 @@ $color3: rgba(166, 111, 73, 1);
 $color4: rgba(73, 35, 22, 1);
 $color5: rgba(124, 24, 24, 1); */
 
-body{
-background: rgb(146, 133, 133);
+body {
+    background: rgb(146, 133, 133);
 }
-div.kontainer{
-    width: 800px;
+.kontainer {
+    width: 900px;
     margin: 0 auto;
     padding: 50px;
-    background: rgba(97, 122, 122, 1);
+    
 }
-div .kontainer .sida2 {
-    background: #000;
+.kontainer .sida1{
+    background: rgb(196, 152, 152);
+    padding: 60px;
 }
-div .kontainer .sida3 {
-    background: white;
+.kontainer .sida2{
+    background: rgb(194, 73, 73);
+    padding: 60px;
 }
-div .kontainer .sida4 {}
-div .kontainer .sida5 {}
-h1{
+.kontainer .sida3{
+    background: rgb(84, 125, 133);
+    padding: 60px;
+}
+.kontainer .sida4{
+    background: rgb(146, 157, 179);
+    padding: 60px;
+}
+.kontainer .sida5{
+    background: rgb(255, 163, 57);
+    padding: 60px;
+}
 
+.kontainer h1 {
+    font: 60px, sans-serif;
+    text-align: center;
 }
-ul{
-
+.kontainer .meny{
+text-align: center;
+margin: 10px 0 30px;
 }
-li{
-
+.kontainer .meny li {
+    list-style-type: none;
+    display: inline;
 }
-h2{
-
+.kontainer h2 {}
+img {
+    width: 100%;
 }
-img{
-width: 100%;
-}
-p{
-
-}
-a{
-
-}
+p {}
+a {}
