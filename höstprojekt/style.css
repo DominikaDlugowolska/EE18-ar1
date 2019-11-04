@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=McLaren|Neucha&display=swap');
 /* Enkel CSS-reset */
 html {
     box-sizing: border-box;
@@ -16,40 +17,82 @@ $color3: rgba(166, 111, 73, 1);
 $color4: rgba(73, 35, 22, 1);
 $color5: rgba(124, 24, 24, 1); */
 
+/* CSS clearfix mot box-kollaps (när man använder float) */
+.clearfix:after { 
+    content: "."; 
+    visibility: hidden; 
+    display: block; 
+    height: 0; 
+    clear: both;
+ }
 body {
-    background: rgb(146, 133, 133);
+    background: url("./bilder/bakgrund.jpg");
+    background-size: cover;
+    background-attachment: fixed;
 }
 .kontainer {
-    width: 900px;
+    width: 1000px;
     margin: 0 auto;
     padding: 50px;
+    font-size: 20px;
     
 }
+.info{
+    background: rgb(211, 199, 186);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    border:6px solid rgb(134, 121, 106);
+    margin: 10px auto;
+}
+.note{
+    background: rgba(211, 199, 186, 0.651);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    border:6px dashed rgb(134, 121, 106);
+    margin: 10px auto;  
+}
+/* Utseendet för varsin sida */
 .kontainer .sida1{
-    background: rgb(196, 152, 152);
+    background:rgb(61, 105, 117, 0.507);
     padding: 60px;
+    border-radius: 20px;
 }
 .kontainer .sida2{
-    background: rgb(194, 73, 73);
+    background: rgba(243, 136, 49, 0.507);
     padding: 60px;
+    border-radius: 20px;
 }
 .kontainer .sida3{
-    background: rgb(84, 125, 133);
+    background: rgba(221, 118, 78, 0.507);
     padding: 60px;
+    border-radius: 20px;
 }
 .kontainer .sida4{
-    background: rgb(146, 157, 179);
+    background:rgba(101, 160, 121, 0.507);
     padding: 60px;
+    border-radius: 20px;
 }
 .kontainer .sida5{
-    background: rgb(255, 163, 57);
+    background: rgb(255, 126, 101, 0.507);
     padding: 60px;
+    border-radius: 20px;
 }
 
 .kontainer h1 {
-    font: 60px, sans-serif;
+    font-family: 'McLaren', cursive;
+    font-size: 40px;
     text-align: center;
+    padding: 0 0 15px 0;
 }
+.kontainer h2 {
+    font-family: 'McLaren', cursive;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(71, 59, 45);
+}
+/* Utseendet på meny */
 .kontainer .meny{
 text-align: center;
 margin: 10px 0 30px;
@@ -58,9 +101,52 @@ margin: 10px 0 30px;
     list-style-type: none;
     display: inline;
 }
-.kontainer h2 {}
-img {
-    width: 100%;
+.kontainer .meny a{
+    text-decoration: none;
+    background: rgb(177, 158, 145);
+    padding: 5px;
+    margin: 0 3px;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 3px 3px 0 black;
+    display: inline-block;
+}
+.kontainer .meny a:hover{
+    background: rgb(197, 113, 85);
+}
+.kontainer .meny .aktiv{
+    background: rgb(158, 82, 56);
+}
+/* Utseendet på lite annat */
+
+.ruta img {
+    width: 450px;
+    padding: 10px;
+    border: 3px dashed rgb(134, 121, 106);
+}
+.info img {
+    width: 450px;
+    padding: 10px;
+    border: 3px dashed rgb(134, 121, 106);
+}
+.note .paws{
+    width: 70px;
+}
+.ruta{
+    margin: 10px auto;
+    padding: 10px;
+    font-family: 'Neucha', cursive;
+}
+.vänster{
+float: left;
+margin-right: 20px;
+}
+.höger{
+float: right;
+margin-left: 20px;
+}
+.texthöger{
+ text-align: right; 
 }
 p {}
 a {}
