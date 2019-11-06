@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=McLaren|Neucha&display=swap');
+@import url('https://fonts.googleapis.com/css?family=McLaren|Neucha|Patrick+Hand&display=swap');
 /* Enkel CSS-reset */
 html {
     box-sizing: border-box;
@@ -96,10 +96,12 @@ body {
 .kontainer .meny{
 text-align: center;
 margin: 10px 0 30px;
+font-family: 'McLaren', cursive;
 }
 .kontainer .meny li {
     list-style-type: none;
     display: inline;
+    padding: 5px;
 }
 .kontainer .meny a{
     text-decoration: none;
@@ -124,10 +126,18 @@ margin: 10px 0 30px;
     padding: 10px;
     border: 3px dashed rgb(134, 121, 106);
 }
+.info{
+    font-family: 'Patrick Hand', cursive;
+    margin-bottom: 35px;
+}
 .info img {
     width: 450px;
     padding: 10px;
     border: 3px dashed rgb(134, 121, 106);
+}
+.note{
+    
+    font-family: 'Patrick Hand', cursive;
 }
 .note .paws{
     width: 70px;
@@ -148,5 +158,12 @@ margin-left: 20px;
 .texthöger{
  text-align: right; 
 }
-p {}
-a {}
+.kalla{
+  color: rgb(219, 219, 219); 
+  font-family: 'Patrick Hand', cursive;
+  font-size: 20px;
+}
+.kalla a{
+    color: rgb(207, 103, 103);
+    text-decoration: none;
+}
