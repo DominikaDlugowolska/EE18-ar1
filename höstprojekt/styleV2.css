@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=McLaren|Neucha|Patrick+Hand&display=swap');
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+/* Sidans färgpalett
+$color1: rgba(32, 80, 86, 1);
+$color2: rgba(97, 122, 122, 1);
+$color3: rgba(166, 111, 73, 1);
+$color4: rgba(73, 35, 22, 1);
+$color5: rgba(124, 24, 24, 1); */
+
+/* CSS clearfix mot box-kollaps (när man använder float) */
+.clearfix:after { 
+    content: "."; 
+    visibility: hidden; 
+    display: block; 
+    height: 0; 
+    clear: both;
+ }
+body {
+    background: url("./bilder/bakgrund.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.kontainer {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 50px;
+    font-size: 20px; 
+}
+.Tillbaka{
+width: 60px;
+}
+.info{
+    background: rgb(211, 199, 186);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    border:6px solid rgb(134, 121, 106);
+    margin: 10px auto;
+    font-family: 'Patrick Hand', cursive;
+    margin-bottom: 35px;
+}
+.note{
+    background: rgba(211, 199, 186, 0.651);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    border:6px dashed rgb(134, 121, 106);
+    margin: 10px auto; 
+    font-family: 'Patrick Hand', cursive; 
+}
+/* Utseendet för varsin sida */
+.kontainer .sida1{
+    background:rgb(61, 105, 117, 0.507);
+    padding: 60px;
+    border-radius: 20px;
+}
+.kontainer .sida2{
+    background: rgba(243, 136, 49, 0.507);
+    padding: 60px;
+    border-radius: 20px;
+}
+.kontainer .sida3{
+    background: rgba(221, 118, 78, 0.507);
+    padding: 60px;
+    border-radius: 20px;
+}
+.kontainer .sida4{
+    background:rgba(101, 160, 121, 0.507);
+    padding: 60px;
+    border-radius: 20px;
+}
+.kontainer .sida5{
+    background: rgb(255, 126, 101, 0.507);
+    padding: 60px;
+    border-radius: 20px;
+}
+
+.kontainer h1 {
+    font-family: 'McLaren', cursive;
+    font-size: 40px;
+    text-align: center;
+    padding: 0 0 15px 0;
+}
+.kontainer h2 {
+    font-family: 'McLaren', cursive;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(71, 59, 45);
+}
+/* Utseendet på meny */
+
+.note .rutnat{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+    padding: 10px;
+}
+.rutnat img{
+    width: 300px;
+    padding: 10px;
+    border: 3px dashed rgb(134, 121, 106);
+}
+
+/* Utseendet på lite annat */
+
+.ruta img {
+    width: 450px;
+    padding: 10px;
+    border: 3px dashed rgb(134, 121, 106);
+}
+.info img {
+    width: 450px;
+    padding: 10px;
+    border: 3px dashed rgb(134, 121, 106);
+}
+.note .paws{
+    width: 70px;
+}
+.ruta{
+    margin: 10px auto;
+    padding: 10px;
+    font-family: 'Neucha', cursive;
+}
+.vänster{
+float: left;
+margin-right: 20px;
+}
+.höger{
+float: right;
+margin-left: 20px;
+}
+.texthöger{
+ text-align: right; 
+}
+.kalla{
+  color: rgb(219, 219, 219); 
+  font-family: 'Patrick Hand', cursive;
+  font-size: 20px;
+}
+.kalla a{
+    color: rgb(207, 103, 103);
+    text-decoration: none;
+}
