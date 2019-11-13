@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Introduktion till Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Introduktion till Javascript</h1>
+    </div>
+    <script>
+    /* Slumpa fram ett tal */
+    var slumptal = Math.ceil(Math.random() * 10);
+    console.log("Slumptal = " + slumptal);
+    
+    /* Läs av gissning */
+    var gissning = prompt("Gissa ett tal 1-10");
+
+    /* Är gissning = slumptal? */
+    if (gissning == slumptal) {
+       /* Ja, Rätt svar */
+       location.replace("http://www.princetontutoring.com/blog/wp-content/uploads/2014/04/wrong-answer.png");
+
+    } else {
+        /* Nej, Fel svar */
+        location.replace("https://www.trainerbubble.com/wp-content/uploads/2015/09/Wrong-Answer_web-1024x682.jpg");
+    }
+
+    
+
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Introduktion till Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Introduktion till Javascript</h1>
+    </div>
+    <script>
+    /* Läs in text */
+    var text = prompt("Texten:");
+
+    /* Byt ut bokstäver */
+    var nyText = text.replace('är', 'blivit').replace('du', 'morsan').replace('min', 'lasagne').replace('har', 'puff'); /* om det finns ett a i namnet byts det ut mot ett o */
+
+    /* Skriv ut resultat */
+    alert(nyText);
+    </script>
+</body>
+</html>
