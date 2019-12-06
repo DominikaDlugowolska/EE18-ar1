@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kalender 2019</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="kalender.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Mood Calender</h1>
+        <div class="kalender">
+            <!-- skriv .ruta{$}*15 för att få 10st div boxar på en gång -->
+            <div class="ruta animated dag1" onclick="öppnaDag1()">1</div>
+            <div class="ruta animated dag2" onclick="öppnaDag2()">2</div>
+            <div class="ruta animated dag3" onclick="öppnaDag3()">3</div>
+            <div class="ruta animated dag4" onclick="öppnaDag4()">4</div>
+            <div class="ruta animated dag5" onclick="öppnaDag5()">5</div>
+            <div class="ruta animated dag6" onclick="öppnaDag6()">6</div>
+            <div class="ruta animated dag7" onclick="öppnaDag7()">7</div>
+            <div class="ruta animated dag8" onclick="öppnaDag8()">8</div>
+            <div class="ruta animated dag9">9</div>
+            <div class="ruta animated dag10">10</div>
+            <div class="ruta animated dag11">11</div>
+            <div class="ruta animated dag12">12</div>
+            <div class="ruta animated dag13">13</div>
+            <div class="ruta animated dag14">14</div>
+            <div class="ruta animated dag15">15</div>
+        </div>
+    </div>
+    <script>
+    /* Element vi arbetar med */
+    const elementDag1 = document.querySelector(".dag1");
+    const elementDag2 = document.querySelector(".dag2");
+    const elementDag3 = document.querySelector(".dag3");
+    const elementDag4 = document.querySelector(".dag4");
+    const elementDag5 = document.querySelector(".dag5");
+    const elementDag6 = document.querySelector(".dag6");
+    const elementDag7 = document.querySelector(".dag7");
+    const elementDag8 = document.querySelector(".dag8");
+
+    function öppnaDag1() {
+       elementDag1.classList.toggle("fadeOut");
+       elementDag1.classList.toggle("b1");
+    }
+    function öppnaDag2() {
+       elementDag2.classList.toggle("fadeOut");
+       elementDag2.classList.toggle("b2");
+    }
+    function öppnaDag3() {
+       elementDag3.classList.toggle("fadeOut");
+       elementDag3.classList.toggle("b3");
+    }
+    function öppnaDag4() {
+       elementDag4.classList.toggle("fadeOut");
+       elementDag4.classList.toggle("b4");
+    }
+    function öppnaDag5() {
+       elementDag5.classList.toggle("fadeOut");
+       elementDag5.classList.toggle("b5");
+    }
+    function öppnaDag6() {
+       elementDag6.classList.toggle("fadeOut");
+       elementDag6.classList.toggle("b6");
+    }
+    function öppnaDag7() {
+       elementDag7.classList.toggle("fadeOut");
+       elementDag7.classList.toggle("b7");
+    }
+    function öppnaDag8() {
+       elementDag8.classList.toggle("fadeOut");
+       elementDag8.classList.toggle("b8");
+    }
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+body{
+
+}
+.rubrik {
+width: 600px;
+background: #000;
+color: white;
+text-align: center;
+margin: 3em auto;
+padding: 100px;
+box-shadow: 0 0 12px red;
+}
+.rutnät .dold {
+    display: none;
+    }

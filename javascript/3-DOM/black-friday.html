@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Black Friday</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <img class="dold" src="./foton/blue.jpg" alt="cat and a SCHMETTERLING">
+    </div>
+    <script>
+       /* element vi arbetar med */
+       const elementImg = document.querySelector("img");
+
+       /* Fördröja visningen på bilden */
+       setTimeout(visaBild, 3000);
+
+       function visaBild() {
+           elementImg.classList.remove("dold");
+       }
+    </script>
+</body>
+</html>

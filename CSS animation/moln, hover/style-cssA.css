@@ -1,0 +1,28 @@
+body{
+    background: lightblue;
+    text-align: center;
+}
+.wrapper{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+/* img{  (flyttar på objektet var man än vill, translate(100px, -500px
+    transform: translateX(500px);
+} */
+.circle{
+    width: 100px;
+    padding: 50px 0;
+    line-height: 0;
+    margin: 60px auto;
+    background: pink;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 1s, transform 0.3s ease-in; /* specify which properties you want to control, otherwise it's going to change everything */
+}
+
+.circle:hover{
+    background: salmon;
+    transform: rotate(360deg);
+}

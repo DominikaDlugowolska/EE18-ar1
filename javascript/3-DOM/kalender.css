@@ -1,0 +1,117 @@
+/* Enkel CSS-reset */
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+/* Styla kalendern */
+body{
+background: url("./foton/bakgrund.jpg");
+}
+.kontainer{
+background: rgba(0, 0, 0, 0.541);
+width: 800px;
+margin: auto;
+font-family: 'Indie Flower', cursive;
+color: white;
+text-align: center;
+
+}
+h1{
+    color: teal;
+    font-size: 50px;
+    font-weight: bold;
+}
+.kalender{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 50px;
+    justify-content: space-around;
+}
+.ruta{
+font-size: 30px;
+background: rgb(89, 114, 89);
+width: 80px;
+height: 80px;
+padding: 25px;
+border-radius: 5px;
+cursor: pointer;
+transition-duration: 1s;
+}
+.ruta:hover{
+    background: rgb(153, 194, 153);
+    box-shadow: 0 0 10px rgb(194, 240, 209);
+}
+
+.b1 {
+    font-size: 0;
+    background: url("./foton/b1.jpg") center;
+    background-size: 80px 80px;
+    animation: tona 5s;
+    pointer-events: none;
+}
+.b2 {
+    font-size: 0;
+    background: url("./foton/b2.jpg") center;
+    background-size: 80px 80px;
+    animation: tona 5s;
+    pointer-events: none;
+}
+.b3 {
+    font-size: 0;
+    background: url("./foton/b3.jpg") center;
+    background-size: 80px 80px;
+    animation: tona 5s;
+    pointer-events: none;
+}
+.b4 {
+    font-size: 0;
+    background: url("./foton/b4.jpg") center;
+    background-size: 80px 80px;
+    animation: tona 5s;
+    pointer-events: none;
+}
+.b5 {
+    font-size: 0;
+    background: url("./foton/b5.jpg") center;
+    background-size: 80px 80px;
+    animation: tona 5s;
+    pointer-events: none;
+}
+.b6 {
+    font-size: 0;
+    background: url("./foton/b6.jpg") center;
+    background-size: 80px 80px;
+    animation: tona 5s;
+    pointer-events: none;
+}
+.b7 {
+    font-size: 0;
+    background: url("./foton/b7.jpg") center;
+    background-size: 80px 80px;
+    animation: tona 5s;
+    pointer-events: none;
+}
+.b8 {
+    font-size: 0;
+    background: url("./foton/b8.jpg") center;
+    background-size: 80px 80px;
+    animation: tona 5s;
+    pointer-events: none;
+}
+
+@keyframes tona {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

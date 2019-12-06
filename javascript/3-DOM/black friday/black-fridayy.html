@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BLACK FRIDAY</title>
+    <script src="//cdn.rawgit.com/gibbok/animatelo/1.0.3/dist/animatelo.min.js"></script>
+    <link rel="stylesheet" href="black-friday.css">
+</head>
+<body>
+    <div class="kontainer">
+            <img id="foto1" src="./bilder/Black-Friday.png" alt="">
+<div class="rutnät">
+            <img id="r1" class="dold" src="./bilder/reklam1.jpeg" alt="">
+            <img src="./bilder/produkt1.jpeg" alt="">
+            <img src="./bilder/produkt2.jpg" alt="">
+            <img id="r2" class="dold" src="./bilder/reklam2.jpg" alt="">
+            <img id="r3" class="dold" src="./bilder/reklam3.jpg" alt="">
+            <img src="./bilder/produkt3.jpg" alt="">
+            <img src="./bilder/produkt4.jpg" alt="">
+            <img id="r4" class="dold" src="./bilder/reklam4.jpg" alt="">
+        </div>
+    </div>
+    
+    <script>
+        /* element jag arbetar med */
+        const elementFoto1 = document.querySelector("#foto1");
+        const elementRek1 = document.querySelector("#r1");
+        const elementRek2 = document.querySelector("#r2");
+        const elementRek3 = document.querySelector("#r3");
+        const elementRek4 = document.querySelector("#r4");
+        
+        /* Fördröjning */
+        setTimeout(reklam, 5000);
+
+        function visaRek() {
+         elementRek1.classList.remove("dold");
+         setTimeout(reklam, 10000);
+        }
+        function reklam() {
+            elementRek1.classList.add("flash");
+        }
+    </script>
+</body>
+</html>
