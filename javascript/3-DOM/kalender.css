@@ -106,6 +106,55 @@ transition-duration: 1s;
     animation: tona 5s;
     pointer-events: none;
 }
+.b9 {
+    font-size: 0;
+    background: url("./foton/b9.jpg") center;
+    background-size: 80px 80px;
+    animation: tona 5s;
+    pointer-events: none;
+}
+.b10 {
+    font-size: 0;
+    background: url("./foton/b10.jpg") center;
+    background-size: 80px 80px;
+    animation: tona 5s;
+    pointer-events: none;
+}
+.b11 {
+    font-size: 0;
+    background: url("./foton/b11.jpg") center;
+    background-size: 80px 80px;
+    animation: tona 5s;
+    pointer-events: none;
+}
+.b12 {
+    font-size: 0;
+    background: url("./foton/b12.jpg") center;
+    background-size: 80px 80px;
+    animation: tona 5s;
+    pointer-events: none;
+}
+.b13 {
+    font-size: 0;
+    background: url("./foton/b13.jpg") center;
+    background-size: 80px 80px;
+    animation: tona 5s;
+    pointer-events: none;
+}
+.b14 {
+    font-size: 0;
+    background: url("./foton/b14.jpg") center;
+    background-size: 80px 80px;
+    animation: tona 5s;
+    pointer-events: none;
+}
+.b15 {
+    font-size: 0;
+    background: url("./foton/b15.jpeg") center;
+    background-size: 80px 80px;
+    animation: tona 5s;
+    pointer-events: none;
+}
 
 @keyframes tona {
     from {
