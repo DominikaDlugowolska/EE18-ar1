@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <button onclick="visaKatten()">Klicka gärna på mig, tvivla inte ( ͡° ͜ʖ ͡°)</button>
+        
+    </div>
+
+    <script>
+        /* Hitta element jag jobbar på */
+       const elementBox = document.querySelector("div");
+
+       function visaKatten() {
+         elementBox.innerHTML = "<h1>Imma head out.</h1>" + "<img src=\"./foton/cat-ufo.gif\" alt=\"cat ufo\">";  
+         /* Ta bort " " inom img, lägg \ framför varje " */
+       }
+    </script>
+</body>
+</html>
