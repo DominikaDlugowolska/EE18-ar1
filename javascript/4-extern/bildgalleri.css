@@ -1,0 +1,23 @@
+.kontainer #bildruta{
+    width: 100%;
+    height: 510px;
+    background: rgba(228, 224, 220, 0.644);
+    padding: 10px;
+    text-align: center;
+    
+}
+.kontainer #bildruta img{
+    width: 700px;
+    padding: 0;
+   
+}
+.kontainer .kol8{
+display: grid;
+grid-template-columns: repeat(8, auto);
+gap: 10px;
+}
+.kontainer .kol8 img{
+padding: 0;
+border: 2px solid rgb(255, 102, 0);
+cursor: pointer;
+}
