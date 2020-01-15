@@ -12,19 +12,22 @@
 <body>
     <div class="kontainer">
         <h1>När då då?</h1>
-        <p>Välj ett kort och skriv sedan ett svar i rutan nedan.</p>
+        
 
-        <label>Gissa årtalet</label>
+       <h3>Frågan</h3>
        <textarea cols="30" rows="10"></textarea>
 
         <label>Gissa årtalet</label>
-        <input type="text" value="">
-        <button>Skicka</button>
+        <input id="årtal" type="text">
+        <button id="skicka">Skicka</button>
+
+        <label>Poäng</label>
+        <input id="poäng" type="text" readonly>
 
         <h3>Svar</h3>
-        <i class="fa fa-thumbs-up"></i>
-        <i class="fa fa-thumbs-down"></i>
-        <button>Nästa fråga >></button>
+        <i id="upp" class="fa fa-thumbs-up"></i>
+        <i id="ned" class="fa fa-thumbs-down"></i id="ned">
+        <button id="nästa">Nästa fråga >></button>
         
     </div>
     <!-- defer - försenade, förskjuten (kör inte js fören html har laddat och allting är på plats) -->
