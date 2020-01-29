@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito|Roboto+Mono&display=swap');
+
+body {
+   margin: 0; 
+   font-family: 'Roboto Mono', monospace;
+}
+
+p, blockquote {
+    font-size: .9em;
+    line-height: 1.6em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding: .8em 1.2em;
+}
+
+.logo{
+    width: 130px;
+}
+
+.hide-mobile {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content:space-between;
+}
+
+.monu {
+    width: 25px;
+    margin-top: 45%;
+}
+
+/* Responsive image to resizing the site */
+.server {
+width: 70%;
+margin: 2em auto 2em 25%;
+}
+
+h1, .subhead {
+    position: relative;
+    z-index: 3;
+    /* Lite design thing */
+}
+
+.subhead {
+    font-size: 1.1em;
+}
+
+.blue-container {
+    width: 100%;
+    background:rgb(255, 81, 0);
+    color: white;
+    margin-top: 15%;
+    padding: 4em 0 2em;
+    /* rund kant i ena sidan */
+    border-top-left-radius: 40px;
+    /* Lilla kurvan */
+    transform: skewY(-2deg);
+}
+
+.blue-container:before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 81, 0);
+    position: absolute;
+    top: -39px;
+    right: 0;
+    z-index: -2;
+}
+.blue-container:after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    top: -80px;
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.blue-container ul {
+    /* Fixar ul när transform används */
+    transform: skewY(2deg);
+}
+
+.blue-container ul li {
+    margin: 3em;
+}
+
+.blue-container ul li p {
+   padding: 0 .5em;
+}
+
+.blue-container img {
+    width: 14%;
+}
+ .blue-container ul li:nth-child(3) img {
+     width: 8%;
+ }
+
+ .gray-container {
+     background: #F6F6F6;
+     padding: 4em 0 2em;
+     margin-top: -3%;
+ }
+ /* Första kontakt saken på sidan som programmet tar upp */
+ .gray-container ul li:first-child {
+margin-bottom: 2em;
+ }
+
+ figure {
+     margin: 0;
+     padding: 0;
+ }
+
+ figcaption { 
+     font-weight: bold;
+     color: rgb(255, 81, 0);
+ }
+
+ h2 {
+     margin-top: 7%;
+ }
+ 
