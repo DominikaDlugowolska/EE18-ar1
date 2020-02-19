@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Lacquer&display=swap');
+body {
+background-image: url(./bilder/tripping-bg2.jpg);
+background-size: 900px;
+border: dashed 10px rgb(59, 67, 75);
+}
+.container {
+  width: 700px;
+  text-align: center;
+  background: rgb(59, 67, 75);
+  margin: 3em auto;
+  border-radius: 3px;
+  border: dashed 10px ;
+  padding-bottom: 30px;
+  
+}
+.container h1 {
+    font-family: 'Lacquer', sans-serif;
+}
+.container h2 {
+    font-family: 'Lacquer', sans-serif;
+    color: tomato;
+}
+.container img {
+width: 500px;
+border-radius: 7px;
+border: dashed black 7px;
+
+}
+.container label, .container p {
+font-size: 20px;
+color: rgb(146, 146, 146);
+}
+
+
