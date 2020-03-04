@@ -1,9 +1,7 @@
 body{
 
 }
-table{
-width:1450px;
-background-color: rgb(255, 255, 255);
+
 
 }
 caption{
@@ -15,7 +13,7 @@ tr{
 th{
 
 }
-td{
+table tr td{
     background: #745e5e;
 padding: 30px;
 border:10px solid white
