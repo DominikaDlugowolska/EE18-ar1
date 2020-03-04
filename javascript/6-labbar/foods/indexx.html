@@ -33,7 +33,7 @@
             <h1>Another World</h1>
             <p class="subhead">Art gallery of two fellow artists.</p>
 
-            <img src="./images/scroll.svg" alt="scroll" class="hide-mobile show-desktop">
+            <img src="./images/leaff.png" alt="scroll" class="hide-mobile show-desktop scroll">
         </section>
         <div class="blue-container">
             <div class="container">
@@ -97,6 +97,24 @@
 
         </div>
     </footer>
+
+    <script>
+
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e){
+            nav.classlist.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e){
+            nav.classlist.add('hide-mobile');
+            e.preventDefault();
+        });
+
+    </script>
 
 </body>
 </html>
