@@ -12,7 +12,7 @@ border: dashed 10px rgb(59, 67, 75);
   border-radius: 3px;
   border: dashed 10px ;
   padding-bottom: 30px;
-  display: flex;
+  
   justify-content: space-between;
   
 }
@@ -25,11 +25,11 @@ border: dashed 10px rgb(59, 67, 75);
     font-family: 'Lacquer', sans-serif;
     color: tomato;
 }
-.container img {
-width: 500px;
-border-radius: 7px;
-border: dashed black 7px;
 
+.ouf {
+  width: 500px;
+  border-radius: 7px;
+border: dashed black 7px;
 }
 .container label, .container p {
 font-size: 20px;
@@ -37,12 +37,9 @@ color: rgb(146, 146, 146);
 }
 
 .scroll {
-  width: 5px;
+  width: 80px;
   animation: action 1s infinite  alternate;
-  display: inline;
-  border-radius: 7px;
-border: dashed black 7px;
-
+  
 }
 
 @keyframes action {
