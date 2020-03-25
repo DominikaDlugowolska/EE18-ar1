@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="./canvas.css">
+</head>
+<body>
+    <canvas></canvas> 
+    <script>
+        /* Element vi jobbar med */
+        const eCanvas = document.querySelector("canvas");
+
+        /* Ställ in bredd och höjd på canvas */
+        eCanvas.width = 800;
+        eCanvas.height = 600;
+
+        /* Aktivera ritmotor */
+        var ctx = eCanvas.getContext("2d");
+
+        /* rita en rektangel */
+        ctx.fillRect(100, 100, 200, 200);
+
+        /* Rita en färgad rektangel */
+        ctx.fillStyle = "darkBlue";
+        ctx.fillRect(100, 400, 200, 100);
+
+        ctx.fillStyle = "red";
+        ctx.fillRect(100, 500, 200, 100);
+
+        /* uppgift */
+        ctx.fillStyle = "blue";
+        ctx.fillRect(400, 100, 50, 50);
+        ctx.fillStyle = "orange";
+        ctx.fillRect(450, 100, 50, 50);
+        ctx.fillStyle = "blue";
+        ctx.fillRect(500, 100, 50, 50);
+        ctx.fillStyle = "orange";
+        ctx.fillRect(400, 150, 50, 50);
+        ctx.fillStyle = "blue";
+        ctx.fillRect(450, 150, 50, 50);
+        ctx.fillStyle = "orange";
+        ctx.fillRect(500, 150, 50, 50);
+
+        /* uppgift 2 */
+        ctx.fillStyle = "yellow";
+        ctx.fillRect(400, 400, 300, 500);
+        ctx.fillStyle = "blue";
+        ctx.fillRect(400, 510, 100, 600);
+        ctx.fillStyle = "blue";
+        ctx.fillRect(530, 510, 170, 600);
+        ctx.fillStyle = "blue";
+        ctx.fillRect(400, 400, 100, 90);
+        ctx.fillStyle = "blue";
+        ctx.fillRect(530, 400, 170, 90);
+
+        /* second version 
+        ctx.fillStyle = "lightblue";
+        ctx.fillRect(400, 300, 300, 200);
+        ctx.fillStyle = "yellow";
+        ctx.fillRect(400, 370, 300, 50);
+        ctx.fillStyle = "yellow";
+        ctx.fillRect(500, 300, 50, 200);
+        */
+
+        /* rita en linje */
+        ctx.beginPath(); /* nu börjar vi rita */
+        ctx.moveTo(0,0); /* start punkt */
+        ctx.lineWidth = 5;
+        ctx.lineTo(400, 300);
+        ctx.lineTo(500, 300);
+        ctx.lineTo(600, 200);
+        ctx.lineTo(600, 0);
+        ctx.strokeStyle = "grey";
+        ctx.stroke();
+
+        ctx.beginPath(); /* nu börjar vi rita */
+        ctx.moveTo(400,400); /* start punkt */
+        ctx.lineWidth = 5;
+        ctx.lineTo(700, 400);
+        ctx.lineTo(700, 600);
+        ctx.lineTo(400, 600);
+        ctx.lineTo(400, 400);
+
+        ctx.strokeStyle = "salmon";
+        ctx.stroke();
+        
+    </script>
+</body>
+</html>

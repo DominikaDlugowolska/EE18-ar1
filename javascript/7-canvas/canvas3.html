@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="./canvas.css">
+</head>
+<body>
+    <canvas></canvas> 
+    <script>
+        /* Element vi jobbar med */
+        const eCanvas = document.querySelector("canvas");
+
+        /* Ställ in bredd och höjd på canvas */
+        eCanvas.width = 800;
+        eCanvas.height = 600;
+
+        /* Aktivera ritmotor */
+        var ctx = eCanvas.getContext("2d");
+
+
+        /* rita en cirkel */
+        ctx.beginPath();
+        ctx.arc(600, 200, 50, 0, 2 * Math.PI);
+
+        ctx.moveTo(100, 600);
+        ctx.lineTo(100, 100);
+        ctx.lineTo(700, 100);
+        ctx.moveTo(600, 100);
+        ctx.lineTo(600, 150);
+        ctx.moveTo(600, 250);
+        ctx.lineTo(600, 450);
+        ctx.lineTo(650, 550);
+        ctx.moveTo(600, 450);
+        ctx.lineTo(550, 550);
+        ctx.moveTo(600, 300);
+        ctx.lineTo(550, 400);
+        ctx.moveTo(600, 300);
+        ctx.lineTo(650, 400);
+        ctx.stroke();
+
+        
+
+
+    </script>
+</body>
+</html>
