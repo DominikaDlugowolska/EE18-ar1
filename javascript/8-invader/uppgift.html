@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="./pikachu.css">
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        /* ****************************** */
+        /*        Ställ in canvas         */
+        /* ****************************** */
+        const eCanvas = document.querySelector("canvas");
+        eCanvas.width = 1200;
+        eCanvas.height = 1000;
+        var ctx = eCanvas.getContext("2d");
+
+        /* ****************************** */
+        /*     Variablar och Objekten     */
+        /* ****************************** */
+
+        /* Gör till objekt, alla delar blir samlade */
+        var saitama = {
+            x: Math.random() * 1200,
+            y: 0,
+            bild: new Image()
+        }
+        var ironman = {
+            x: Math.random() * 1200,
+            y: 0,
+            bild: new Image()
+        }
+        var hulk = {
+            x: Math.random() * 1200,
+            y: 0,
+            bild: new Image()
+        }
+        var thor = {
+            x: Math.random() * 1200,
+            y: 0,
+            bild: new Image()
+        }
+        var spiderman = {
+            x: 500,
+            y: 900,
+            dx: 5,
+            bild: new Image()
+        }
+
+        /* laddar in bilderna */
+        saitama.bild.src = "./ikoner/icons8-saitama-50.png";
+        ironman.bild.src = "./ikoner/icons8-iron-man-50.png";
+        hulk.bild.src = "./ikoner/icons8-hulk-50.png";
+        thor.bild.src = "./ikoner/icons8-thor-50.png";
+        spiderman.bild.src = "./ikoner/icons8-office-l-50.png";
+
+        /* ****************************** */
+        /*            Funktioner          */
+        /* ****************************** */
+
+        /* funktion med parametrar, nu kan vi rita fler rektanglar utan att behöva skriva om funktionen (genom att skirva x, y så kan vilket värde som helst stoppas in) */
+
+        function ritaSaitama() {
+            ctx.drawImage(saitama.bild, saitama.x, saitama.y);
+        }
+
+        function ritaIronman() {
+            ctx.drawImage(ironman.bild, ironman.x, ironman.y);
+        }
+
+        function ritaHulk() {
+            ctx.drawImage(hulk.bild, hulk.x, hulk.y);
+        }
+
+        function ritaThor() {
+            ctx.drawImage(thor.bild, thor.x, thor.y);
+        }
+
+        function ritaSpiderman() {
+            ctx.drawImage(spiderman.bild, spiderman.x, spiderman.y);
+        }
+
+        /* Knapparna */
+        let leftArrow = false;
+        let rightArrow = false;
+
+        document.addEventListener("keydown", function(event) {
+            if (event.keyCode == 37) {
+                leftArrow = true;
+            } else if (event.keyCode == 39) {
+                rightArrow = true;
+            }
+        });
+        document.addEventListener("keyup", function(event) {
+            if (event.keyCode == 37) {
+                leftArrow = false;
+            } else if (event.keyCode == 39) {
+                rightArrow = false;
+            }
+        });
+
+        function movePaddle() {
+            if (rightArrow && spiderman.x < eCanvas.width) {
+                spiderman.x += spiderman.dx;
+            } else if (leftArrow && spiderman.x > 0) {
+                paddle.x -= spiderman.dx;
+            }
+        }
+
+        /* Animationsloopen */
+        function loopen() {
+            /* Sudda ut canvas */
+            ctx.clearRect(0, 0, 1200, 1000);
+
+            saitama.y += 5;
+            ritaSaitama();
+
+            ironman.y += 5;
+            ritaIronman();
+
+            hulk.y += 4;
+            ritaHulk();
+
+            thor.y += 3;
+            ritaThor();
+
+            ritaSpiderman();
+
+            requestAnimationFrame(loopen);
+        }
+
+        /* ****************************** */
+        /*     Starta animationsloopen    */
+        /* ****************************** */
+        loopen();
+    </script>
+</body>
+</html>
