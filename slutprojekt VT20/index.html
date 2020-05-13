@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fish Tank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <!-- Kod för meny -->
+        <span class="slide">
+            <a href="#" onclick="openSlideMenu()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </span>
+
+        <div id="meny" class="nav">
+            <a href="#" class="close" onclick="closeSideMenu()"></a>
+            <i class="fas fa-times"></i>
+            <li><a href="index.html">Sida 1</a></li>
+            <li><a href="sida2.html">Sida 2</a></li>
+        </div>
+        <div class="fishtank">
+            <div class="corals">
+                <!-- bakgrunden -->
+                <img class="scroll" data-rate="-0.5" src="./bilder/pngguru.png" alt="big coral">
+                <img class="scroll" data-rate="-2" src="./bilder/kindpng_1194705.png" alt="side coral coral">
+                <img class="scroll" data-rate="-2" src="./bilder/kindpng_1194705.png" alt="side coral coral">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        /* element vi använder */
+        const eTarget = document.querySelectorAll(".scroll");
+
+        /* lyssna om man skrollar */
+        window.addEventListener("scroll", function(e) {
+
+            eTarget.forEach(function(element) {
+                /* läs av data-rate för element, hur snabbt dom ska förflytta sig */
+                var rate = element.dataset.rate;
+                /* räkna en förflyttning */
+                var distance = window.pageYOffset * rate;
+
+                /* flytta element */
+                element.style.transform = "translateY(" + distance + "px)";
+            });
+        });
+    </script>
+</body>
+</html>

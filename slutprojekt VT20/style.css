@@ -1,0 +1,43 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+.fishtank {
+    background: rgb(112, 128, 150);
+    width: 1100px;
+    height: 1000px;
+    margin: 10px auto;
+}
+
+.corals img:nth-child(1) {
+    position: absolute;
+    top: 780px;
+    width: 65%;
+}
+.corals img:nth-child(2) {
+    position: absolute;
+    top: 1310px;
+    width: 20%;
+}
+.corals img:nth-child(3) {
+    position: absolute;
+    top: 1310px;
+    left: 1100px;
+    width: 20%;
+}
+
+/* Meny */
+.meny {
+    text-align: center;
+}
+.meny li {
+    list-style-type: none;
+    display: block;
+}

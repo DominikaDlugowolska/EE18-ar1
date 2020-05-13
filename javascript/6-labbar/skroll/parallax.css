@@ -1,0 +1,98 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+.kontainer {
+    background: rgb(197, 191, 191);
+    height: 100;
+}
+
+.balloons img:nth-child(1) {
+    position: absolute; 
+    top: 550px;
+    left: 150px;
+    z-index: 0;
+}
+.balloons img:nth-child(2) {
+    position: absolute; 
+    top: 1100px;
+    left: 550px;
+    z-index: 0;
+}
+.balloons img:nth-child(3) {
+    position: absolute; 
+    top: 2050px;
+    left: 350px;
+    z-index: 0;
+}
+
+.mid-clouds img:nth-child(1) {
+    /* den första bilden i boxen */
+    position: absolute; /* använd BARA för effekter, bygg inte sidan med den */
+    top: 320px;
+    left: 10px;
+    z-index: 1;
+}
+.mid-clouds img:nth-child(2) {
+    position: absolute; 
+    top: 480px;
+    left: 750px;
+    z-index: 1;
+}
+.mid-clouds img:nth-child(3) {
+    position: absolute; 
+    top: 850px;
+    left: 20px;
+    z-index: 1;
+}
+.mid-clouds img:nth-child(4) {
+    position: absolute; 
+    top: 1250px;
+    left: 250px;
+    z-index: 1;
+}
+.mid-clouds img:nth-child(5) {
+    position: absolute; 
+    top: 1650px;
+    left: 430px;
+    z-index: 1;
+}
+
+.back-clouds img:nth-child(1) {
+    /* den första bilden i boxen */
+    position: absolute; /* använd BARA för effekter, bygg inte sidan med den */
+    top: 150px;
+    left: 320px;
+    z-index: 2;
+}
+.back-clouds img:nth-child(2) {
+    position: absolute; 
+    top: 300px;
+    left: 700px;
+    z-index: 2;
+}
+.back-clouds img:nth-child(3) {
+    position: absolute; 
+    top: 570px;
+    left: 220px;
+    z-index: 2;
+}
+.back-clouds img:nth-child(4) {
+    position: absolute; 
+    top: 1050px;
+    left: 250px;
+    z-index: 2;
+}
+.back-clouds img:nth-child(5) {
+    position: absolute; 
+    top: 1500px;
+    left: 500px;
+    z-index: 2;
+}

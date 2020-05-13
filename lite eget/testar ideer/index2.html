@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fish Tank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <div class="corals">
+            <!-- bakgrunden -->
+            <img class="scroll" data-rate="-0.5" src="./bilder/pngguru.png" alt="big coral">
+            <img class="scroll" data-rate="-2" src="./bilder/kindpng_1194705.png" alt="side coral coral">
+            <img class="scroll" data-rate="-2" src="./bilder/kindpng_1194705.png" alt="side coral coral">
+        </div>
+    </div>
+    <canvas></canvas>
+
+    <script>
+        /* element vi använder */
+        const eTarget = document.querySelectorAll(".scroll");
+
+        /* SCRIPT FÖR PARALLAX */
+
+        /* lyssna om man skrollar */
+        window.addEventListener("scroll", function(e) {
+            
+            eTarget.forEach(function(element) {
+                /* läs av data-rate för element, hur snabbt dom ska förflytta sig */
+                var rate = element.dataset.rate;
+                /* räkna en förflyttning */
+                var distance = window.pageYOffset * rate;
+
+                /* flytta element */
+                element.style.transform = "translateY(" + distance + "px)";
+            });
+        });
+
+        /* SCRIPT FÖR ANIMATION */
+
+        const Food = 
+    </script>
+</body>
+</html>
