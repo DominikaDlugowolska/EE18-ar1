@@ -5,33 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Fish Tank</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 </head>
 <body>
-    <div class="kontainer">
-        <!-- Kod för meny -->
+    <!-- Kod för meny -->
+    <div id="content">
+
         <span class="slide">
             <a href="#" onclick="openSlideMenu()">
                 <i class="fas fa-bars"></i>
             </a>
         </span>
 
-        <div id="meny" class="nav">
-            <a href="#" class="close" onclick="closeSideMenu()"></a>
+        <div id="menu" class="nav">
+            <a href="#" class="close" onclick="closeSlideMenu()"></a>
             <i class="fas fa-times"></i>
-            <li><a href="index.html">Sida 1</a></li>
-            <li><a href="sida2.html">Sida 2</a></li>
+            <a href="index.html">Sida 1</a>
+            <a href="sida2.html">Sida 2</a>
         </div>
-        <div class="fishtank">
+    </div>
+
+
+        <div class="kontainer">
             <div class="corals">
-                <!-- bakgrundenn -->
+                <!-- bakgrunden -->
                 <img class="scroll" data-rate="-0.5" src="./bilder/pngguru.png" alt="big coral">
                 <img class="scroll" data-rate="-2" src="./bilder/kindpng_1194705.png" alt="side coral coral">
                 <img class="scroll" data-rate="-2" src="./bilder/kindpng_1194705.png" alt="side coral coral">
             </div>
         </div>
-    </div>
 
     <script>
+        /* Script för meny */
+        function openSlideMenu() {
+            document.getElementById('menu').style.width = '350px';
+            document.getElementById('content').style.marginLeft = '350px';
+        }
+        function closeSlideMenu() {
+            document.getElementById('menu').style.width = '0';
+            document.getElementById('content').style.marginLeft = '0';
+        }
+
+        
         /* element vi använder */
         const eTarget = document.querySelectorAll(".scroll");
 
