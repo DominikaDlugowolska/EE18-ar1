@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*  defaul styling */
+        body{
+            margin: 0;
+        }
+        button{
+            background: none;
+            border: none;
+            padding: 0;
+            
+        }
+        footer{
+            width: 100%;
+            margin-top: auto;
+        }
+
+        header{
+            width: 100%;
+            position: fixed;
+            top: 0;
+        }
+
+        /* Header */
+        header .navbar{
+            display: flex;
+        }
+        header .navbar button{
+            margin-left: auto;
+            padding: 20px 30px;
+        }
+        
+        .page{
+            min-height: 100vh;
+            min-width: 100vw;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Main */
+        main{
+            width: 100%;
+        }
+        main .content{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        main .content .main-title{
+            max-width: 350px;
+            width: 100%;
+            font-size: 30px;
+            color: #503D42;
+            text-align: left;
+
+        }
+        main .content .wrapperbtns{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        main .wrapperbtns .title{
+            font-size: 30px;
+            color: #503D42;
+            text-align: left;
+        }
+        main .wrapperbtns button{
+            background: #503D42;
+            max-width: 350px;
+            width: 100%;
+            color: white;
+            padding: 10px;
+            font-size: 20px;
+            margin-top: 8px;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        /* Footer */
+        .page footer .footer-content{
+            width: 100%;
+            box-sizing: border-box;
+            padding: 20px;
+            background: #503D42;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+        }
+        .flex-text .box{
+            width: 100px;
+            height: 100px;
+            border: solid 2px;
+            border-radius: 10px;
+        }
+
+        @media (min-width: 1200px) {
+            main .content {
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+            main .content .main-title{
+            }
+            main .content .wrapperbtns .title{
+                max-width: none;
+                width: auto;
+            }
+            main .content .wrapperbtns{
+                align-items: center;
+                justify-content: center;
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <div class="navbar">
+                <button>
+                    MENU
+                </button>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <div class="main-title">
+                    <h1>Welcome to <br> Aquantic</h1>
+                </div>
+                <div class="wrapperbtns">
+                    <span class="title">What are you looking for?</span>
+                    <button>Book ticket</button>
+                    <button>About Aquantic</button>
+                    <button>Contact</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-content">
+                <span>
+                    BY: DOMINIKA DŁUGOWOLSKA
+                </span>
+                <div class="img-holder">
+                    <img src="./bilder/facebook.svg" alt=""> 
+                </div>
+                
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
+
+
+<!-- 
+
+
+    navbar 
+
+    content{
+        box{
+            box{
+                welcome to aquantic
+            }
+            box{
+                box{
+                    what are you looking for
+                }
+                box{
+                    guzik
+                    guzik
+                    guzik
+                }
+            }
+        }
+    }
+
+    footer{
+        footer-conntent{
+            text{
+                Dominiak
+            }
+        }
+    }  GOTOWE :DDD
+
+
+
+
+    /* samma height som page, men padding och border räknas inte med i dessa 100 procent, box sisizn gör att de räknas in  */
+    /* justify-content: space-between gör att allting har samma avstånd mellan sig, bra om man har flera element i samma box *o* */
+    /* button{
+            background: none;
+            border: none;
+        }
+
+        detta gör att knapparna ser ut som vanlig text! 
+     */   
+     Asså... ba kör display flex och align-items center på allt istället för margin.
+     Parent ska ha display flex och child ska ha margin-left om den ska till höger. Underlättar hela jobbet ._.
+     När du ska göra content kör display flex, två boxar inuti med justify-content: row när sidan är desktop,
+     på mindre skärmar ska vi ändra det till column istället för row      så kommer allting att gå bra
+
+     align-items lägger allting i mitten mellan uppe och nere
+     justify-content lägger allting i mitten mellan höger och vänster
+ -->

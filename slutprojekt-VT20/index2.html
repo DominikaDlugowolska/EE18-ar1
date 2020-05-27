@@ -4,15 +4,54 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Fisksida</title>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
 </head>
 <body>
-    <div class="meny">
-        <li><a href="index2.html">Sida 1</a></li>
-        <li><a href="sida2.html">Sida 2</a></li>
-    </div>
     <div class="kontainer">
-        <h1>asså fiskar... am I right.. hah</h1>
-    </div>
+
+    <header>
+        <div id="myTopnav" class="topnav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index2.html">Start site</a>
+            <a href="sida2.html">Galery</a>
+            <a href="sida2.html">Opinions</a>
+        </div>
+        <h3 onclick="openNav()" class="menu">MENU</h3>
+    </header>
+
+    <main>
+            <div class="content">
+                    <div class="main-title">
+                        <h1>WELCOME TO <br> AQUANTIC!</h1>
+                    </div>
+        
+                    <div class="wrapperbtn">
+                        <span class="title">WHAT ARE YOU LOOKING FOR?</span>
+                        <button>BOOK TICKETS</button>
+                        <button>ABOUT AQUANTIC</button>
+                        <button>CONTACT</button>
+                    </div>
+            </div>
+            
+    </main>
+
+    <footer>
+        <div class="f-content">
+            <span> BY DOMINIKA DLUGOWOLSKA</span>
+        </div>
+    </footer>
+    
+</div>
+    <script>
+        function openNav() {
+            document.getElementById("myTopnav").style.width = "250px";
+            document.getElementById("kontainer").style.marginTop = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("myTopnav").style.width = "0";
+            document.getElementById("kontainer").style.marginTop = "0";
+        }
+    </script>
 </body>
 </html>

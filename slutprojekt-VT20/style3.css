@@ -1,0 +1,144 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+/* Allting är från början kodad som för en mobile device, med media gör jag mindre ändringar för desktop devices */
+.sidan{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #EEFDFF;
+}
+button{
+    background: none;
+    border: none;
+}
+
+/* Mitten innehåll (main) av sidan */
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+main .content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+main .content .main-title{
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: #503D42;
+
+}
+main .content .wrapperbtn{
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .content .title{
+    color: #503D42;
+    font-size: 35px;
+    width: 100%;
+    text-align: center;
+}
+main .content .wrapperbtn button{
+    background: #503D42;
+    padding: 10px;
+    margin-top: 8px;
+    width: 100%;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+}
+main .content .wrapperbtn button:hover{
+    background-color: rgb(116, 91, 98);
+}
+
+/* Innehållet som finns längst ner (footer) */
+
+.sidan footer {
+    width: 100%;
+    background: #503D42;
+    box-sizing: border-box;
+    padding: 20px;
+    color: white;
+    margin-top: auto;
+}
+
+@media (min-width:1100px ){
+    main .content{
+        flex-direction: row;
+    }
+    main .content .main-title{
+        font-size: 40px;
+        max-width: none;
+    }
+    main .content .wrapperbtn{
+        max-width: none;
+    }
+    main .content .wrapperbtn button{
+        font-size: 30px;
+        max-width: 500px;
+    }
+}
+
+/* För sida2 */
+.sidan main .content-two{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.sidan main .content-two img{
+    min-width: 150px;
+    width: 10%;
+    border-radius: 10px;
+    padding: 10px;
+}
+main .content-two .st{
+    background: rgb(103, 132, 158);
+    width: 70%;
+    height: 215px;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    padding-top: 10px;
+}
+main .content-two .nd{
+    width: 70%;
+    height: 215px;
+    background: rgb(175, 208, 236);
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    padding-top: 10px;
+}
+
+.animate__fadeIn{
+    animation-delay: 0.5s;
+}
+.animate__fadeInDown{
+    animation-delay: 1.5s;
+}

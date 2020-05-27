@@ -10,33 +10,94 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     padding: 0;
 }
 
+/* Version för desktop */
 
-.kontainer {
-    width: 1200px;
-    min-height: 800px;
-    margin: 40px auto;
-    background: aquamarine;
+h2{
+    font: 90px sans-serif;
+    color: #503D42;
+    font-size: 90px;
+}
+.vänsterBox{
+   margin-right: auto;
     text-align: center;
-    padding: 30px;
 }
-.kontainer img {
-    width: 20%;
+.högerBox{
+    color: #503D42;
+    font: 25px sans-serif;
+    margin-left: auto;
 }
-.row{
-    background: white;
-    margin: 30px auto;
+.högerBox button {
+    margin-top: 20px;
+    width: 430px;
+    border: none;
+    background-color: #503D42;
+    color: white;
     font-size: 30px;
-    padding: 30px;
+    padding: 30px 22px;
     text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
 }
-.left{
-    float: left;
-    margin-right: 20px;
+
+
+.footer{
+    height: 45px;
+    padding: 15px 0 0 30px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #503D42;
+    color: white;
 }
-.right{
+
+.menu {
     float: right;
-    margin-left: 20px;
+    width: 40%;
+    color: black;
+    font: 40px sans-serif;
+    padding: 20px 0 0 400px;
 }
-.textRight{
-    text-align: right;
+
+
+/* Top menu */
+.topnav{
+    height: 100%;
+    width: 0;
+    position: fixed; /*stannar på samma plats*/
+    z-index: 1; /*ligger överst*/
+    top: 0;
+    
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden; /*inaktivera horiontell skroll*/
+    padding-top: 60px;
+    transition: 0.5s;
+}
+.topnav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: inline-block;
+    transition: 0.3s;
+}
+.topnav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#kontainer {
+    transition: margin-top .5s;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* version för tablets */
+@media (max-width: 768px) {
+    .topnav {padding-top: 15px;}
+    .topnav a {font-size: 18px;}
 }
