@@ -10,7 +10,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     padding: 0;
 }
 /* Allting är från början kodad som för en mobile device, med media gör jag mindre ändringar för desktop devices */
-.sidan{
+.sidan {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -18,21 +18,75 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     align-items: center;
     background: #EEFDFF;
 }
-button{
+button {
     background: none;
     border: none;
+    cursor: pointer;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+header button {
+    color: #503D42;
+    font-size: 30px;
+    margin-left: auto;
+}
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    /* elementet sitter kvar på samma plats */
+    z-index: 1;
+    /* elementet sitter överst */
+    left: 0;
+    top: 0;
+    background-color: rgba(26, 24, 24, 0.952);
+    overflow-y: auto;
+    transition: 0.5s;
+}
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(107, 107, 107);
+    display: block;
+    transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+    color: rgb(189, 189, 189);
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 50px;
 }
 
 /* Mitten innehåll (main) av sidan */
 
-main{
+main {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
 }
 
-main .content{
+main .content {
     width: 100%;
     display: flex;
     align-items: center;
@@ -40,7 +94,7 @@ main .content{
     justify-content: space-evenly;
 }
 
-main .content .main-title{
+main .content .main-title {
     max-width: 350px;
     width: 100%;
     text-align: center;
@@ -48,20 +102,20 @@ main .content .main-title{
     color: #503D42;
 
 }
-main .content .wrapperbtn{
+main .content .wrapperbtn {
     max-width: 350px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-main .content .title{
+main .content .title {
     color: #503D42;
     font-size: 35px;
     width: 100%;
     text-align: center;
 }
-main .content .wrapperbtn button{
+main .content .wrapperbtn button {
     background: #503D42;
     padding: 10px;
     margin-top: 8px;
@@ -71,7 +125,7 @@ main .content .wrapperbtn button{
     border-radius: 5px;
     font-size: 20px;
 }
-main .content .wrapperbtn button:hover{
+main .content .wrapperbtn button:hover {
     background-color: rgb(116, 91, 98);
 }
 
@@ -86,38 +140,50 @@ main .content .wrapperbtn button:hover{
     margin-top: auto;
 }
 
-@media (min-width:1100px ){
-    main .content{
+@media (min-width:1100px) {
+    /* Header */
+    .overlay {
+        overflow-y: hidden;
+    }
+    .overlay a {
+        font-size: 40px;
+    }
+    .overlay .closebtn {
+        font-size: 70px;
+        top: 20px;
+        right: 45px;
+    }
+    main .content {
         flex-direction: row;
     }
-    main .content .main-title{
+    main .content .main-title {
         font-size: 40px;
         max-width: none;
     }
-    main .content .wrapperbtn{
+    main .content .wrapperbtn {
         max-width: none;
     }
-    main .content .wrapperbtn button{
+    main .content .wrapperbtn button {
         font-size: 30px;
         max-width: 500px;
     }
 }
 
 /* För sida2 */
-.sidan main .content-two{
+.sidan main .content-row {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
 }
-.sidan main .content-two img{
+.sidan main .content-row img {
     min-width: 150px;
     width: 10%;
     border-radius: 10px;
     padding: 10px;
 }
-main .content-two .st{
+main .content-row .st {
     background: rgb(103, 132, 158);
     width: 70%;
     height: 215px;
@@ -126,7 +192,7 @@ main .content-two .st{
     text-align: left;
     padding-top: 10px;
 }
-main .content-two .nd{
+main .content-row .nd {
     width: 70%;
     height: 215px;
     background: rgb(175, 208, 236);
@@ -136,9 +202,33 @@ main .content-two .nd{
     padding-top: 10px;
 }
 
-.animate__fadeIn{
+/* Sidan för formuläret */
+.content-row .topbox {
+    min-height: 395px;
+    height: auto;
+    height: 395px;
+    width: 100%;
+    background-color: rgb(43, 38, 38);
+}
+.content-row .topbox img {
+    width: 100%;
+    height: auto;
+}
+.content-row .topbox .imgtext {
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+}
+.content-row .bottombox {
+    height: 100%;
+    width: 80%;
+    background-color: rgb(76, 68, 68);
+}
+
+/* Animation */
+.animate__fadeIn {
     animation-delay: 0.5s;
 }
-.animate__fadeInDown{
+.animate__fadeInDown {
     animation-delay: 1.5s;
 }
