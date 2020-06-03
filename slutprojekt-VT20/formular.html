@@ -6,40 +6,103 @@
     <title>Form</title>
     <link rel="stylesheet" href="style3.css">
 </head>
-<body>
+<body style="background-color: #12171A">
     <div class="sidan">
-        <header style="background: rgb(43, 38, 38);">
+        <header style="background: #12171A">
             <div id="nav" class="overlay">
 
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
                 <div class="overlay-content">
                     <a href="formular.html">Book Ticket</a>
+                    <a href="gallery.html">Gallery</a>
                     <a href="#">Contact</a>
                     <a href="#">About us</a>
-                    <a href="#">Gallery</a>
                 </div>
             </div>
             <button onclick="openNav()">MENU</button>
         </header>
         <main>
-            <div class="content-row">
+            <div class="content-form">
                 <div class="topbox">
-                        <img src="./bilder/aquarium.jpg" alt="">
-                    <div class="imgtext">
-                        <h2>Unforgetable experience</h2>
-                    </div>
+                    <img src="./bilder/aquarium-two.jpg" alt="">
+
                 </div>
                 <div class="bottombox">
-                    
+                    <!--  <fieldset>
+                        <legend>Välj biljettyp</legend>
+                        <input type="radio" name="biljett" id="vuxen" value="130">
+                        <label for="vuxen">Vuxen 130kr</label> <br>
+                        <input type="radio" name="biljett" id="student" value="100">
+                        <label for="student">Student 100kr</label> <br>
+                        <input type="radio" name="biljett" id="barn" value="80">
+                        <label for="barn">Barn 80kr</label> <br>
+                    </fieldset> -->
+
+                    <div class="info-wrapper">
+                        <h1>Book tickets</h1>
+                        <div class="adult-box">
+                            <p>Adult</p>
+                            <input type="checkbox" name="adults" id="oneA" value="130">
+                            <label for="oneA">1 Adult</label>
+                            <input type="checkbox" name="adults" id="twoA" value="260">
+                            <label for="twoA">2 Adults</label>
+                            <input type="checkbox" name="adults" id="threeA" value="390">
+                            <label for="threeA">3 Adults</label>
+                        </div>
+
+                        <div class="student-box">
+                            <p>Student</p>
+                            <input type="checkbox" name="students" id="oneS" value="100">
+                            <label for="oneS">1 Student</label>
+                            <input type="checkbox" name="antal-student" id="twoS" value="200">
+                            <label for="twoS">2 Student</label>
+                            <input type="checkbox" name="antal-student" id="threeS" value="300">
+                            <label for="threeS">3 Student</label>
+                        </div>
+
+                        <div class="child-box">
+                            <p>Child</p>
+                            <input type="checkbox" name="child" id="oneC" value="80">
+                            <label for="oneC">1 Child</label>
+                            <input type="checkbox" name="antal-barn" id="twoC" value="160">
+                            <label for="twoC">2 Children</label>
+                            <input type="checkbox" name="antal-barn" id="threeC" value="240">
+                            <label for="threeC">3 Children</label>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <h2>Please fill in the boxes</h2>
+
+                            <div>
+                                Full Name *
+                                <input name="name" id="name" type="text">
+                            </div>
+                            <div>
+                                Email *
+                                <input name="email" id="email" type="email">
+                            </div>
+                            <div>
+                                Phone *
+                                <input type="text" id="mobile">
+                                <span id="message"></span>
+                                
+                            </div>
+                            <button id="btn">Klicka</button>
+                        <!-- <div class=" info-left">
+                            <p>You will recive the receipt to your phone. Please, make sure the information you write is correct</p>
+                    </div> -->
+                    </div>
+
                 </div>
             </div>
         </main>
-        <footer>
+        <!-- <footer>
 
             <span>Av Dominika EE18B</span>
 
-        </footer>
+        </footer> -->
     </div>
     <script>
         /* Öppna meny */
@@ -50,6 +113,26 @@
         function closeNav() {
             document.getElementById("nav").style.height = "0%";
         }
+
+        /* Fyll in information */
+        const eKnapp = document.querySelector("#btn");
+    
+    eKnapp.addEventListener("click", function () {
+        var pass1 = document.getElementById('mobile');
+        var message = document.getElementById('message');
+        var badColor = "#FF9B37";
+
+        
+        if (pass1.value.length != 10) {
+
+            pass1.style.backgroundColor = badColor;
+            message.style.color = badColor;
+            message.innerHTML = "required 10 digits, match requested format!"
+        } else {
+            alert("Your number " + pass1.value);
+        }
+        
+    })
     </script>
 </body>
 </html>

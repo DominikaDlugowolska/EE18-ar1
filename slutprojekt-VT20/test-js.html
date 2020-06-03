@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bara en test</h1>
+    <div>
+        <input type="text" id="mobile">
+        <span id="message"></span>
+        <button onclick="notis()">Klicka</button>
+    </div>
+
+    <script>
+        
+        const eKnapp = document.querySelector("button");
+    
+        eKnapp.addEventListener("click", function notis() {
+            var pass1 = document.getElementById('mobile');
+            var message = document.getElementById('message');
+            var badColor = "#FF9B37";
+
+            if (pass1.value != 10) {
+
+                mobile.style.backgroundColor = badColor;
+                message.style.color = badColor;
+                message.innerHTML = "required 10 digits, match requested format!"
+            } else {
+                alert("Your number " + mobile.value);
+            }
+            
+        })
+    </script>
+</body>
+</html>

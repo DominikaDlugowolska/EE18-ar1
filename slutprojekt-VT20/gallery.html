@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+
+<body>
+    <div style="background-color: rgb(20, 20, 20);" class="sidan">
+        <header style="background-color: rgb(20, 20, 20);">
+            <div id="nav" class="overlay">
+
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <div class="overlay-content">
+                    <a href="formular.html">Book Ticket</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="#">Contact</a>
+                    <a href="#">About us</a>
+                </div>
+            </div>
+            <button onclick="openNav()">MENU</button>
+        </header>
+
+        <main>
+            <div class="container-gallery">
+                <div class="slideshow">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 4</div>
+                        <img style="width: 100%;" src="./photos/foto1.jpg" alt="">
+                        <div class="text">Caption Text</div>
+                    </div>
+    
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 4</div>
+                        <img style="width: 100%;" src="./photos/foto2.jpg" alt="">
+                        <div class="text">Caption Two</div>
+                    </div>
+    
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 4</div>
+                        <img style="width: 100%;" src="./photos/foto3.jpg" alt="">
+                        <div class="text">Caption Three</div>
+                    </div>
+    
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 4</div>
+                        <img style="width: 100%;" src="./photos/foto4.jpg" alt="">
+                        <div class="text">Caption Four</div>
+                    </div>
+    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+    
+                <div style="text-align: center;">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+                </div>
+        </main>
+
+       <footer style="background-color: rgb(37, 37, 37);;">
+
+            <span>Av Dominika EE18B</span>
+
+        </footer>
+    </div>
+    <script>
+        /* Öppna meny */
+        function openNav() {
+            document.getElementById("nav").style.height = "100%";
+        }
+        /* Stäng meny */
+        function closeNav() {
+            document.getElementById("nav").style.height = "0%";
+        }
+        
+        var slideIndex = 1;
+        /* Slideshow */
+        function plusSlides(n){
+            slideIndex += n;
+            showSlides(slideIndex);
+        }
+        function currentSlide(n) {
+            slideIndex += n;
+            showSlides(slideIndex);
+        }
+        
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var slidesConvertedToArray = Array.from(slides);
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1} /* om n är större än längden på slides så går det tillbaka till 1 */
+            if (n < 1) {slideIndex = slides.length} /* om n är mindre än 1 så ändras värdet till slides längd (i detta fall 4) */
+
+            for (i = 0; i < slides.length; i++) /* variabeln är noll från början, sedan kollas det om i är mindre än slides längden */
+            {
+                slides[i].style.display = "none"; /* slides[i] hänvisar till första elementet i array, det kollar upp alla element och skriver över style display. Så om någon av element har en annan display så ställs det till none. Display none gör osynlig*/
+            }
+
+            for (i = 0; i < dots.length; i++){
+                dots[i].className = dots[i].className.replace("active", ""); /* byter ut alla class active till inget */
+            }
+            
+            slides[slideIndex-1].style.display = "block"; /* detta görs bara en gång, den upprepas inte för alla element som finns, bara en. Dvs elementet kommer att visas */
+            dots[slideIndex-1].className += " active";
+        }
+
+        
+        showSlides(slideIndex);
+
+
+    </script>
+</body>
+</html>
+
+

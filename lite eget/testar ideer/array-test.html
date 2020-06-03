@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <img src="./bilder/foto1.jpg" alt="">
+    </div>
+    <script>
+        const arrayPhotos = ['foto1', 'foto2', 'foto3', 'foto4'];
+    </script>
+    <script>
+        const arrayImagesWithText = [
+            ["photo1.jpg", "Pinguin1"],
+            ["photo2.jpg", "Pinguin2"],
+            ["photo3.jpg", "Pinguin3"],
+            ["photo4.jpg", "Pinguin4"],
+        ]  
+       
+        
+        let currentIndexImage = 0;
+        let arrayOfCurrentImages = [];
+        function nextPhoto(){
+            currentIndexImage = currentIndexImage + 1;
+
+            for(let i=0;i<3;i++){
+                arrayOfCurrentImages[i] = arrayImagesWithText[currentIndexImage+i][0];
+            }
+
+            console.log(arrayOfCurrentImages[0], arrayOfCurrentImages[1], arrayOfCurrentImages[2]);
+
+        }
+
+
+
+    
+    </script>
+</body>
+</html>

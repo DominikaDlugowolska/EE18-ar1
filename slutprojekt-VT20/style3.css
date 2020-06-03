@@ -40,10 +40,8 @@ header button {
 .overlay {
     height: 0%;
     width: 100%;
-    position: fixed;
-    /* elementet sitter kvar på samma plats */
-    z-index: 1;
-    /* elementet sitter överst */
+    position: fixed;/* elementet sitter kvar på samma plats */
+    z-index: 1;/* elementet sitter överst */
     left: 0;
     top: 0;
     background-color: rgba(26, 24, 24, 0.952);
@@ -167,6 +165,7 @@ main .content .wrapperbtn button:hover {
         font-size: 30px;
         max-width: 500px;
     }
+
 }
 
 /* För sida2 */
@@ -203,27 +202,54 @@ main .content-row .nd {
 }
 
 /* Sidan för formuläret */
-.content-row .topbox {
-    min-height: 395px;
-    height: auto;
-    height: 395px;
+.content-form  {
+    background-color: #12171A;
     width: 100%;
-    background-color: rgb(43, 38, 38);
-}
-.content-row .topbox img {
-    width: 100%;
-    height: auto;
-}
-.content-row .topbox .imgtext {
-    color: white;
-    font-size: 30px;
-    padding: 20px;
-}
-.content-row .bottombox {
     height: 100%;
-    width: 80%;
-    background-color: rgb(76, 68, 68);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+.content-form .topbox {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.content-form .bottombox {
+    height: 100%;
+    width: 70%;
+    background-color: rgb(76, 68, 68);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.content-form .adult-box, .student-box, .child-box{
+    width: 100%;
+    padding: 10px;
+    font-size: 22px;
+    margin-top: 20px;
+    border-top: 2px solid white;
+}
+.info-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.info-box{
+   text-align: center;
+   font-size: 20px;
+   padding: 20px;
+   height: 100%;
+}   
+.info-box h2{
+   text-align: center;
+   font-size: 30px;
+   padding: 20px;
+}   
+
 
 /* Animation */
 .animate__fadeIn {
