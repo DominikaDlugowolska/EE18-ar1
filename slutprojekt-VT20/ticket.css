@@ -99,16 +99,25 @@ main .topbox{
     width: 100%;
     
 }
-
+main .topbox img{
+    width: 100%;
+    max-width: 1000px;
+} 
 main .bottombox{
-    width: 60%;
+    width: 80%;
+    max-width: 1000px;
     display: flex;
     flex-direction: column;
     background-color: #503D42;
     border-radius: 10px;
     padding: 10px;
     justify-content: right;
-    font-size: 20px;
+    font-size: calc(15px + 1vw);
+}
+@media(min-width:1200px){
+    main .bottombox{
+        font-size: 25px;
+    }
 }
 main .bottombox #btn{
     margin-top: 18px;
