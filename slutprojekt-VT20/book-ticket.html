@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Form</title>
-    <link rel="stylesheet" href="style3.css">
+    <title>Book Ticket</title>
+    <link rel="stylesheet" href="ticket.css">
 </head>
 <body style="background-color: #12171A">
     <div class="sidan">
@@ -14,31 +14,22 @@
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
                 <div class="overlay-content">
-                    <a href="formular.html">Book Ticket</a>
+                    <a href="book-ticket.html">Book Ticket</a>
                     <a href="gallery.html">Gallery</a>
-                    <a href="#">Contact</a>
-                    <a href="#">About us</a>
+                    <a style=" text-decoration: line-through;" href="#">Contact</a>
+                    <a style=" text-decoration: line-through;" href="#">About us</a>
                 </div>
             </div>
             <button onclick="openNav()">MENU</button>
         </header>
         <main>
-            <div class="content-form">
+            <div class="content">
                 <div class="topbox">
-                    <img src="./bilder/aquarium-two.jpg" alt="">
+                    <img src="./photos/foto4.jpg" alt="">
 
                 </div>
                 <div class="bottombox">
-                    <!--  <fieldset>
-                        <legend>Välj biljettyp</legend>
-                        <input type="radio" name="biljett" id="vuxen" value="130">
-                        <label for="vuxen">Vuxen 130kr</label> <br>
-                        <input type="radio" name="biljett" id="student" value="100">
-                        <label for="student">Student 100kr</label> <br>
-                        <input type="radio" name="biljett" id="barn" value="80">
-                        <label for="barn">Barn 80kr</label> <br>
-                    </fieldset> -->
-
+                   
                     <div class="info-wrapper">
                         <h1>Book tickets</h1>
                         <div class="adult-box">
@@ -75,34 +66,28 @@
                     <div class="info-box">
                         <h2>Please fill in the boxes</h2>
 
-                            <div>
-                                Full Name *
+                            <div class="rutor">
+                                Name *
                                 <input name="name" id="name" type="text">
                             </div>
-                            <div>
+                            <div class="rutor">
                                 Email *
                                 <input name="email" id="email" type="email">
                             </div>
-                            <div>
+                            <div class="rutor">
                                 Phone *
-                                <input type="text" id="mobile">
+                                <input type="text" id="mobile"> <br>
                                 <span id="message"></span>
                                 
                             </div>
-                            <button id="btn">Klicka</button>
-                        <!-- <div class=" info-left">
-                            <p>You will recive the receipt to your phone. Please, make sure the information you write is correct</p>
-                    </div> -->
+                            <button id="btn">Send</button>
+                        
                     </div>
 
                 </div>
             </div>
         </main>
-        <!-- <footer>
-
-            <span>Av Dominika EE18B</span>
-
-        </footer> -->
+        
     </div>
     <script>
         /* Öppna meny */
@@ -129,7 +114,9 @@
             message.style.color = badColor;
             message.innerHTML = "required 10 digits, match requested format!"
         } else {
-            alert("Your number " + pass1.value);
+            alert("Your receipt will be sent to the following number: " + pass1.value);
+            message.innerHTML = "";
+            pass1.style.backgroundColor = "";
         }
         
     })

@@ -126,6 +126,10 @@ main .content .wrapperbtn button {
 main .content .wrapperbtn button:hover {
     background-color: rgb(116, 91, 98);
 }
+main .content .wrapperbtn button a{
+    text-decoration: none;
+    color: white;
+}
 
 /* Innehållet som finns längst ner (footer) */
 
